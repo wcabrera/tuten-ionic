@@ -1,0 +1,53 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu>
+      <!-- <ion-header>
+        <ion-toolbar>
+            <ion-item   lines="none" >
+                <ion-avatar slot="start">
+                  <img [src]="'assets/imgs/profile.jpg'">
+                </ion-avatar>
+                <ion-label>José Luis</ion-label>
+              </ion-item>
+        </ion-toolbar>
+      </ion-header> -->
+      <ion-content class="fondo-menu">
+        <div class="fondo-top-menu">
+          <div class="contenedor-imagen-menu">
+            <!-- <img [src]="'../assets/imgs/u59.png'" class="imagen-menu"> -->
+          </div>
+
+          <div class="nombre-menu"><b>William Cabrera</b></div>
+          <div class="nombre-menu">Developer Full Stack</div>
+        </div>
+        <ion-list class="fondo-menu">
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item   class="fondo-menu" lines="none" [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon" color="primary"></ion-icon>
+              <ion-label  color="secondary">
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+        <div class="linea-separacion"></div>
+        <ion-list  class="fondo-menu">
+          <ion-menu-toggle auto-hide="false">
+            <ion-item  class="fondo-menu" lines="none" (click)="cerrarSesion()">
+              <ion-icon slot="start" name="exit" color="primary"></ion-icon>
+              <ion-label color="secondary">
+                  Cerrar sesión
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+      <!-- <ion-footer>
+        <ion-toolbar text-end>
+            <ion-icon name="exit" color="primary"></ion-icon> <ion-button  fill="clear" color="secondary">Cerrar sesión</ion-button>
+        </ion-toolbar>
+      </ion-footer> -->
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -1,0 +1,110 @@
+
+.nombre-menu{
+    color: var(--ion-color-blanco);
+}
+.imagen-menu{
+    width: 80px; 
+    height:80px; 
+    border-radius: 100%;
+}
+.contenedor-imagen-menu{
+    width:100%;
+    text-align:center;
+}
+.fondo-menu{
+    --background:var(--ion-color-fondo-menu );
+    background:var(--ion-color-fondo-menu );
+}
+.linea-separacion{
+    height: 1px;
+    background-color: var(--ion-color-linea-separacion);
+    width: 100%;
+}
+.fondo-top-menu{
+    background-color: var(--ion-color-cabecera-menu);
+    padding: 20px;
+}
+
+.margin-title {
+    margin-left: 8px;
+}
+
+///////////// COLORES /////////////
+.color-primary{
+    color: var(--ion-color-primary);
+}
+.color-secondary{
+    color: var(--ion-color-secondary);
+}
+.color-secondary-claro{
+    color: var(--ion-color-calm);
+}
+.color-tertiary{
+    color: var(--ion-color-tertiary);
+}
+.color-success{
+    color: var(--ion-color-success);
+}
+.color-warning{
+    color: var(--ion-color-warning);
+}
+.color-danger{
+    color: var(--ion-color-danger);
+}
+.color-dark{
+    color: var(--ion-color-dark);
+}
+.color-medium{
+    color: var(--ion-color-medium);
+}
+.color-light{
+    color: var(--ion-color-light);
+}
+.color-grey-footer{
+    color: var(--ion-color-footer);
+}
+///////////// COLORES /////////////
+
+.text-center{
+    text-align: center;
+}
+
+.center-rows{
+    height: 100%;
+    margin: auto;
+}
+
+.size-titulo-seccion{
+    font-size: var(--ion-font-size-titulo-seccion);
+}
+
+.border-subtitulo{
+    border-bottom: 1px solid var(--ion-color-primary);
+}
+
+.font-family{
+    font-family: var(--ion-font-family);
+}
+
+.titulo-lista{
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: var(--ion-font-size-titulo-lista);
+    color: var(--ion-font-color-tabla);
+    border-bottom: solid 1px var(--ion-font-color-tabla);
+}
+.w-100{
+    width: 100% !important;
+}
+.color-principal{
+    color: var(--ion-color-primary);
+}
+.text-right{
+    text-align: right;
+}
+.inline-block{
+    display: inline-block;
+}
+.padding-item-list{
+    padding-top: 10px;
+}

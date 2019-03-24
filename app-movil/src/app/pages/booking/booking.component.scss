@@ -1,0 +1,8 @@
+@import '../../../theme/colores.scss';
+@import '../../../theme/comunes.scss';
+
+ion-searchbar{
+    &.tareas{
+        --background: rgb(226, 226, 226);
+    }
+}

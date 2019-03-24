@@ -1,0 +1,28 @@
+<ion-content class="contenedor">
+
+  <ion-card class="color-card margenes-card">
+    <ion-card-content>
+        <div>
+          <img src="assets/imgs/TUTEN-logo-1.jpg" class="logo">
+        </div>
+      <form [formGroup]="form" (ngSubmit)="aceptar()">
+        <ion-item>
+          <ion-label  color="medium" position="floating"><ion-icon name='person' item-left></ion-icon> Usuario</ion-label>
+          <ion-input formControlName="usuario" type="text"></ion-input>
+        </ion-item>
+        <ion-item >
+          <ion-label color="medium" position="floating"><ion-icon name="lock"></ion-icon> Contraseña</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <div class="espaciado"></div>
+        <ion-button block color="primary" expand="full" type="submit" [disabled]="form.invalid">
+          Ingresar
+        </ion-button>
+        <button type="submit" class="oculto"></button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+
+
+</ion-content>

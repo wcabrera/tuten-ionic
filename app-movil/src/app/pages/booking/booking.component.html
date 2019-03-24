@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Booking
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-toolbar margin-vertical>
+  <ion-searchbar class="tareas" placeholder="Ingresar el IdBooking o El Precio" [ngModel]="busqueda"
+    (ngModelChange)="aplicarBusqueda($event)" animated autocomplete></ion-searchbar>
+</ion-toolbar>
+<ion-content>
+  <ion-list *ngFor="let b of booking; let i = index" class="contenedor-principal">
+    <!-- <ion-item lines="none" class="item-principal" (click)="verAcordeon(i)"> -->
+    <!-- <ion-label slot="start"><b>{{item.dia}}</b></ion-label> -->
+    <!-- </ion-item> -->
+    <div class="linea-separacion"></div>
+    <!-- <div *ngFor="let elemento of item.listaTareaPendienteOperario"> -->
+    <!-- <ion-item lines="none" *ngIf="acordeon[i]" (click)="verRegistro(elemento)"> -->
+    <div class="item-iterno">
+      <div> BookingId : {{b.bookingId}} </div>
+      <div>Cliente : {{b.cliente}}</div>
+      <div>Fecha de Creación : {{b.bookingTime | date: 'dd/MM/yyyy H:mm'  }}</div>
+      <div> Direcciónes : {{b.streetAddress}} </div>
+      <div>Precio : {{b.bookingPrice}}</div>
+    </div>
+    <!-- </ion-item> -->
+    <!-- <div class="linea-separacion" *ngIf="acordeon[i]"></div> -->
+    <!-- </div> -->
+  </ion-list>
+
+
+  <!-- <body ng-controller="b as booking">
+          <ion-header-bar class="bar-stable">
+              <h1 class="title">Lista Booking</h1>
+          </ion-header-bar>
+          <ion-content>
+              <div class="row header">
+                <div class="col">BookingId</div>
+                <div class="col">Cliente</div>
+                <div class="col">Fecha de Creación</div>
+                <div class="col">Direccióne</div>
+                <div class="col">Precio</div>
+              </div>
+              <div class="row" ng-repeat="data in ctrl.data">
+                <div class="col">{{b.bookingId}}</div>
+                <div class="col">{{b.firstName}}</div>
+                <div class="col"> {{b.bookingTime}}</div>
+                <div class="col">{{b.streetAddress}}</div>
+                <div class="col">{{b.bookingPrice}}</div>
+              </div>
+          </ion-content>
+        </body> -->
+
+
+</ion-content>
